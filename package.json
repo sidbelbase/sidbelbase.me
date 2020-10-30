@@ -8,8 +8,9 @@
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.1",
-    "@popperjs/core": "^2.5.3",
+    "axios": "^0.21.0",
     "bootstrap": "^5.0.0-alpha2",
+    "dayjs": "^1.9.4",
     "popper.js": "^1.16.1",
     "vue": "^3.0.0",
     "vue-router": "^4.0.0-0"

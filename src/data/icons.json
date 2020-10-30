@@ -1,0 +1,9 @@
+{
+    "vue": "fab fa-vuejs",
+    "javascript": "fab fa-js",
+    "python": "fab fa-python",
+    "css":"fab fa-css3-alt",
+    "html":"fab fa-html5",
+    "batchfile": "fa fa-terminal",
+    "c++": "fab fa-cuttlefish"
+}
