@@ -1,6 +1,6 @@
 <template>
               <nav class="navbar navbar-expand-lg navbar-dark darker fixed-top" id="sideNav">
-            <a class="navbar-brand js-scroll-trigger" href="#page-top">
+            <a class="navbar-brand" href="#page-top">
                 <span class="d-block d-lg-none">Siddharth Belbase</span>
                 <span class="d-none d-lg-block">
                     <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="../../assets/img/profile.jpg"
@@ -14,22 +14,22 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <router-link :to="{ name: 'resume', hash: '#about' }" class="nav-link">About</router-link>
+                        <a class="nav-link" href="#about" v-scroll-to="'#about'">About</a>
                     </li>
                     <li class="nav-item">
-                        <router-link :to="{ name: 'resume', hash: '#skills' }" class="nav-link">Skills</router-link>
+                        <a class="nav-link" href="#skills" v-scroll-to="'#skills'">Skills</a>
                     </li>
                     <li class="nav-item">
-                        <router-link :to="{ name: 'resume', hash: '#interests' }" class="nav-link">Interests</router-link>
+                        <a class="nav-link" href="#interests" v-scroll-to="'#interests'">Interests</a>
                     </li>
                     <li class="nav-item">
-                        <router-link :to="{ name: 'resume', hash: '#projects' }" class="nav-link">Projects</router-link>
+                        <a class="nav-link" href="#projects" v-scroll-to="'#projects'">Projects</a>
                     </li>
                     <li class="nav-item">
-                        <router-link :to="{ name: 'resume', hash: '#education' }" class="nav-link">Education</router-link>
+                        <a class="nav-link" href="#education" v-scroll-to="'#education'">Education</a>
                     </li>
                     <li class="nav-item">
-                        <router-link :to="{ name: 'resume', hash: '#experiences' }" class="nav-link">Experiences</router-link>
+                        <a class="nav-link" href="#experiences" v-scroll-to="'#experiences'">Experiences</a>
                     </li>
                 </ul>
             </div>
