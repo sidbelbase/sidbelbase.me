@@ -16,12 +16,17 @@
             </span>
           </div>
           <p>{{ repo.description }}</p>
-          <a :href="repo.url" class="links text-decoration-none font-weight-bold">Github</a>
+          <a
+            :href="repo.url"
+            class="links text-decoration-none font-weight-bold"
+            target="_blank"
+          >Github</a>
           <span v-if="repo.homepage" class="mx-1 font-weight-bold">&middot;</span>
           <a
             :href="repo.homepage"
             v-if="repo.homepage"
             class="links text-decoration-none font-weight-bold"
+            target="_blank"
           >Website</a>
           <span :title="countStars(repo.stargazers_count)">
             <span class="mx-1 font-weight-bold">&middot;</span>
@@ -42,14 +47,16 @@
 <script>
 import relativeTime from "dayjs/plugin/relativeTime";
 import icons from "@/data/icons.json";
-import { ref, onMounted } from "vue";
+import { reactive, onMounted, toRefs } from "vue";
 import dayjs from "dayjs";
 import axios from "axios";
 export default {
+  name: "projects",
   setup() {
-    let projects = ref([]);
-    const username = ref("sidbelbase");
-    const url = ref(`https://api.github.com/users/${username.value}/repos`);
+    const repo = reactive({
+      projects: [],
+      url: "https://api.github.com/users/sidbelbase/repos",
+    });
 
     function humanize(givendate) {
       dayjs.extend(relativeTime);
@@ -74,22 +81,22 @@ export default {
 
     function fetchRepos() {
       axios
-        .get(url.value)
+        .get(repo.url)
         .then((responses) => {
-          responses.data.forEach((repo) => {
-            projects.value.push({
-              name: repo.name,
-              description: repo.description,
-              created_at: repo.created_at,
-              stargazers_count: repo.stargazers_count,
-              language: repo.language,
-              homepage: repo.homepage,
-              url: repo.html_url,
-              fork: repo.fork,
+          responses.data.forEach((project) => {
+            repo.projects.push({
+              name: project.name,
+              description: project.description,
+              created_at: project.created_at,
+              stargazers_count: project.stargazers_count,
+              language: project.language,
+              homepage: project.homepage,
+              url: project.html_url,
+              fork: project.fork,
             });
           });
-          projects.value = projects.value
-            .filter((repo) => !repo.fork && repo.language)
+          repo.projects = repo.projects
+            .filter((project) => !project.fork && project.language)
             .sort((a, b) => new Date(b.created_at) - new Date(a.created_at));
           console.log(projects);
         })
@@ -98,7 +105,7 @@ export default {
         });
     }
     onMounted(() => fetchRepos());
-    return { projects, url, humanize, formatDate, getIconFrom, countStars };
+    return { humanize, formatDate, getIconFrom, countStars, ...toRefs(repo) };
   },
 };
 </script>
