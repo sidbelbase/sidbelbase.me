@@ -58,6 +58,7 @@ export default {
       url: "https://api.github.com/users/sidbelbase/repos",
     });
 
+    // Usage : pluralize(2, 'apple'); // 'apples' OR pluralize(2, 'person', 'people'); // 'people'
     function pluralize(val, word, plural = word + "s") {
       const _pluralize = (num, word, plural = word + "s") =>
         [1, -1].includes(Number(num)) ? word : plural;
@@ -75,6 +76,7 @@ export default {
       return dayjs(givendate).format("MMMM, YYYY");
     }
 
+    // sets font-awesome according to the provided language
     function getIconFrom(language) {
       for (let lang in icons) {
         if (icons.hasOwnProperty(lang) && language.toLowerCase() === lang) {
