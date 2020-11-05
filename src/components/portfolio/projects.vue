@@ -58,6 +58,14 @@ export default {
       url: "https://api.github.com/users/sidbelbase/repos",
     });
 
+    function pluralize(val, word, plural = word + "s") {
+      const _pluralize = (num, word, plural = word + "s") =>
+        [1, -1].includes(Number(num)) ? word : plural;
+      if (typeof val === "object")
+        return (num, word) => _pluralize(num, word, val[word]);
+      return _pluralize(val, word, plural);
+    }
+
     function humanize(givendate) {
       dayjs.extend(relativeTime);
       return dayjs(givendate).fromNow();
@@ -75,8 +83,8 @@ export default {
       }
     }
 
-    function countStars(stars) {
-      return +stars + " stars on Github!";
+    function countStars(givenstar) {
+      return `${givenstar} ${pluralize(+givenstar, "star")} on Github!`;
     }
 
     function fetchRepos() {
