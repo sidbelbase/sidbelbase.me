@@ -13,7 +13,7 @@
     "dayjs": "1.9.5",
     "popper.js": "1.16.1",
     "vue": "3.0.2",
-    "vue-router": "4.0.0-rc.1",
+    "vue-router": "4.0.0-rc.2",
     "vue-scrollto": "2.20.0"
   },
   "devDependencies": {
