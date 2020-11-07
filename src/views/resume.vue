@@ -388,13 +388,13 @@ export default {
     color: #d8d8d8;
   }
 
-  section.resume-section {
+  section.resume-content {
     padding-top: 5rem !important;
     padding-bottom: 5rem !important;
     max-width: 75rem;
   }
 
-  section.resume-section .resume-item .resume-date {
+  section.resume-content .resume-item .resume-date {
     min-width: 18rem;
   }
 
