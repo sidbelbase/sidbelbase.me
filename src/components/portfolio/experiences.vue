@@ -1,13 +1,8 @@
 <template>
-  <section
-    class="resume-content p-3 p-lg-5 d-flex align-items-center"
-    id="experiences"
-  >
+  <section class="resume-content p-3 p-lg-5 d-flex align-items-center" id="experiences">
     <div class="w-100">
       <h2 class="mb-5 text-darker">Experiences &amp; Certificates</h2>
-      <div
-        class="resume-item d-flex flex-column flex-md-row justify-content-between mb-4"
-      >
+      <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-4">
         <div class="resume-content">
           <h3 class="mb-5">Experiences</h3>
           <h4 class="mb-0">Senior Graphic Designer</h4>
@@ -15,9 +10,7 @@
           <p class="font-weight-bold">July 2018 - January 2019</p>
         </div>
       </div>
-      <div
-        class="resume-item d-flex flex-column flex-md-row justify-content-between mb-4"
-      >
+      <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-4">
         <div class="resume-content">
           <h4 class="mb-0">Freelance Graphic Designer</h4>
           <div class="subheading mb-3 text-darker">Behance Inc.</div>
@@ -29,8 +22,8 @@
         <li>
           <span class="font-weight-bold">
             <i class="fa-li fa fa-certificate text-darker"></i>
-            Automate The Boring Stuffs With Python Programming</span
-          >
+            Automate The Boring Stuffs With Python Programming
+          </span>
         </li>
       </ul>
     </div>

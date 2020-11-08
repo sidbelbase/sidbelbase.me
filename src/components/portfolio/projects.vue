@@ -46,8 +46,8 @@
 
 <script>
 import relativeTime from "dayjs/plugin/relativeTime";
-import icons from "@/data/icons.json";
 import { reactive, onMounted, toRefs } from "vue";
+import icons from "@/data/icons.json";
 import dayjs from "dayjs";
 import axios from "axios";
 export default {
@@ -58,7 +58,8 @@ export default {
       url: "https://api.github.com/users/sidbelbase/repos",
     });
 
-    // Usage : pluralize(2, 'apple'); // 'apples' OR pluralize(2, 'person', 'people'); // 'people'
+    // Usage : [1] pluralize(2, 'apple') >> 'apples'
+    //              [2] pluralize(2, 'person', 'people') >> 'people'
     function pluralize(val, word, plural = word + "s") {
       const _pluralize = (num, word, plural = word + "s") =>
         [1, -1].includes(Number(num)) ? word : plural;

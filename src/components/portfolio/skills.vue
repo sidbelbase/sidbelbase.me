@@ -1,19 +1,16 @@
 <template>
-  <section
-    class="resume-content p-3 p-lg-5 d-flex align-items-center"
-    id="skills"
-  >
+  <section class="resume-content p-3 p-lg-5 d-flex align-items-center" id="skills">
     <div class="w-100">
       <h2 class="mb-5 text-darker">Skills</h2>
       <div class="subheading mb-3">Programming Languages &amp; Tools</div>
       <ul class="list-inline dev-icons">
-        <li class="list-inline-item" title="Html 5">
+        <li class="list-inline-item" title="HTML5">
           <i class="fab fa-html5"></i>
         </li>
-        <li class="list-inline-item" title="Css 3">
+        <li class="list-inline-item" title="CSS3">
           <i class="fab fa-css3-alt"></i>
         </li>
-        <li class="list-inline-item" title="Sass">
+        <li class="list-inline-item" title="SASS">
           <i class="fab fa-sass"></i>
         </li>
         <li class="list-inline-item" title="Javascript">
@@ -28,7 +25,7 @@
         <li class="list-inline-item" title="Python">
           <i class="fab fa-python"></i>
         </li>
-        <li class="list-inline-item" title="Vuejs">
+        <li class="list-inline-item" title="VueJs">
           <i class="fab fa-vuejs"></i>
         </li>
         <li class="list-inline-item" title="Bash">
@@ -39,7 +36,8 @@
       <ul class="fa-ul mb-0">
         <li>
           <i class="fa-li fa fa-check"></i> Single Page Applications | Frontend
-          &bull; <strong>VueJS</strong>
+          &bull;
+          <strong>VueJS</strong>
         </li>
         <li>
           <i class="fa-li fa fa-check"></i> Backend Using Python Stacks &bull;
@@ -51,7 +49,8 @@
         </li>
         <li>
           <i class="fa-li fa fa-check"></i> Graphic Designing | Logo Works
-          &bull; <strong>Adobe Illustrator</strong>
+          &bull;
+          <strong>Adobe Illustrator</strong>
         </li>
         <li>
           <i class="fa-li fa fa-check"></i> Agile Development & Prototyping
