@@ -3,7 +3,7 @@
     <div class="w-100">
       <h2 class="mb-5 text-darker">Projects</h2>
       <div
-        class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5"
+        class="repo resume-item d-flex flex-column flex-md-row justify-content-between mb-5"
         v-for="(repo, index) in projects"
         :key="index"
       >
