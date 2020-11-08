@@ -34,9 +34,6 @@
         <li class="list-inline-item" title="Bash">
           <i class="fa fa-terminal h1"></i>
         </li>
-        <li class="list-inline-item" title="Php">
-          <i class="fab fa-php"></i>
-        </li>
       </ul>
       <div class="subheading mb-3">Workflow</div>
       <ul class="fa-ul mb-0">
