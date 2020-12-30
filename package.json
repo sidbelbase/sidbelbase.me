@@ -12,14 +12,14 @@
     "bootstrap": "5.0.0-alpha3",
     "dayjs": "1.9.8",
     "popper.js": "1.16.1",
-    "vue": "3.0.4",
+    "vue": "3.0.5",
     "vue-router": "4.0.2",
     "vue-scrollto": "2.20.0"
   },
   "devDependencies": {
     "@vue/cli-plugin-router": "4.5.9",
     "@vue/cli-service": "4.5.9",
-    "@vue/compiler-sfc": "3.0.4",
+    "@vue/compiler-sfc": "3.0.5",
     "node-sass": "4.14.1",
     "sass-loader": "8.0.2"
   },
