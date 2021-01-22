@@ -17,8 +17,8 @@
     "vue-scrollto": "2.20.0"
   },
   "devDependencies": {
-    "@vue/cli-plugin-router": "4.5.10",
-    "@vue/cli-service": "4.5.10",
+    "@vue/cli-plugin-router": "4.5.11",
+    "@vue/cli-service": "4.5.11",
     "@vue/compiler-sfc": "3.0.5",
     "node-sass": "4.14.1",
     "sass-loader": "8.0.2"
